@@ -1,0 +1,86 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.topBarLi .typoGraphStyle {
+    color: inherit;
+    background-color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar {
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 0 10px;
+    background-color: #ffffff;
+}
+
+.topbar ul {
+    list-style-type: none;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+.topbar .topbarIDUl {
+    padding: 0;
+}
+
+.topBarLi a.topbar-link {
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+    padding-left: 15px;
+    color: inherit;
+    background-color: inherit;
+    position: relative;
+}
+
+.topBarLi {
+    color: black;
+    margin: 0;
+}
+
+.topBarLi:hover {
+    transition: all 0.15s ease-in-out;
+    color: #0077CF;
+}
+
+.topBarLi a.topbar-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 3px;
+    width: 100%;
+    background-color: #0077CF;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.topBarLi a.topbar-link:hover::after {
+    transform: scaleX(1);
+}
+
+.topBarLi a.topbar-link.active::after {
+    transform: scaleX(1);
+}
+
+.topBarLi a.topbar-link:hover {
+    color: inherit;
+}
+
+.topBarLi a.topbar-link.active {
+    color: #0077CF;
+}
+
+.topBarLi .sticky-topbar {
+    padding: 0;
+}
